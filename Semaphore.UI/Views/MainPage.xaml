@@ -107,7 +107,7 @@
                     <TextBlock FontWeight="Bold"
                                Text="Import Contacts"
                                TextWrapping="Wrap" />
-                    <TextBlock Text="Import contact numbers txt file (.txt). The numbers must be comma separated."
+                    <TextBlock Text="Import contact numbers txt file (.txt). The numbers must be newline separated."
                                TextWrapping="Wrap" />
 
                     <Button Margin="0,5"

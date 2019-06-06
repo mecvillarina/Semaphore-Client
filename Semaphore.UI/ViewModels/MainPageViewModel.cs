@@ -95,7 +95,7 @@ namespace Semaphore.UI.ViewModels
                 if (openFileDialog.ShowDialog() == true)
                 {
                     string txtContent = File.ReadAllText(openFileDialog.FileName);
-                    this.ContactNumbers = txtContent.Split(new string[] { "," }, StringSplitOptions.RemoveEmptyEntries).Select(x => x.Trim()).ToList();
+                    this.ContactNumbers = txtContent.Split(new string[] { "\r\n" }, StringSplitOptions.RemoveEmptyEntries).Select(x => x.Trim()).ToList();
                 }
             }
         }
