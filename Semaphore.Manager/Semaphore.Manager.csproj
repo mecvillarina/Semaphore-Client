@@ -53,11 +53,15 @@
     <Compile Include="AccountManager.cs" />
     <Compile Include="Entities\BaseEntity.cs" />
     <Compile Include="Entities\SenderNameEntity.cs" />
+    <Compile Include="Entities\SendMessageRequestEntity.cs" />
+    <Compile Include="Entities\SendMessagesResponseEntity.cs" />
     <Compile Include="IAccountManager.cs" />
+    <Compile Include="IMessageManager.cs" />
     <Compile Include="ManagerBase.cs" />
     <Compile Include="Mappers\EntityContractProfile.cs" />
     <Compile Include="Mappers\IServiceEntityMapper.cs" />
     <Compile Include="Mappers\ServiceEntityMapper.cs" />
+    <Compile Include="MessageManager.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

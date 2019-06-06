@@ -49,14 +49,15 @@
   <ItemGroup>
     <Compile Include="AccountWebService.cs" />
     <Compile Include="DataContracts\ContractBase.cs" />
+    <Compile Include="DataContracts\Request\SendMessageRequestContract.cs" />
     <Compile Include="DataContracts\Response\SenderNameContract.cs" />
+    <Compile Include="DataContracts\Response\SendMessagesResponseContract.cs" />
     <Compile Include="IAccountWebService.cs" />
+    <Compile Include="MessageWebService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="WebServiceBase.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="DataContracts\Request\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>

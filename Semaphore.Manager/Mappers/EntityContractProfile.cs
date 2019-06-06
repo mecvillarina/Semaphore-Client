@@ -13,6 +13,15 @@ namespace Semaphore.Manager.Mappers
 
 			CreateMap<SenderNamesResponseEntity, SenderNamesResponseContract>();
 			CreateMap<SenderNamesResponseContract, SenderNamesResponseEntity>();
-		}
+
+            CreateMap<SendMessageResponseEntity, SendMessageResponseContract>();
+            CreateMap<SendMessageResponseContract, SendMessageResponseEntity>();
+
+            CreateMap<SendMessagesResponseEntity, SendMessagesResponseContract>();
+            CreateMap<SendMessagesResponseContract, SendMessagesResponseEntity>();
+
+            CreateMap<SendMessageRequestEntity, SendMessageRequestContract>();
+            CreateMap<SendMessageRequestContract, SendMessageRequestEntity>();
+        }
     }
 }
