@@ -160,7 +160,7 @@ namespace Semaphore.UI.ViewModels
                 {
                     var numberGroups = new List<string>();
                     var numbers = new List<string>(this.ContactNumbers);
-                    int maxCount = 100;
+                    int maxCount = 40;
                     while (numbers.Count > 0)
                     {
                         string numberStrs = string.Join(",", numbers.Take(maxCount));
@@ -172,11 +172,12 @@ namespace Semaphore.UI.ViewModels
                     {
                         this.StatusMessage = $"Sending ({i + 1}/{numberGroups.Count})";
 
+                        string strNumbers = string.Join(",", numberGroups[i]);
                         var sendMessagesTask = _messageManager.SendBulkMessage(new SendMessageRequestEntity()
                         {
                             ApiKey = ApiKey,
                             Message = Message,
-                            Numbers = string.Join(",", numberGroups[i]),
+                            Numbers = strNumbers,
                             SenderName = SenderName
                         });
 
